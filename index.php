@@ -24,5 +24,8 @@ require_once "modelos/usuarios.modelo.php";
 require_once "modelos/ventas.modelo.php";
 require_once "modelos/visitas.modelo.php";
 
+
+require_once "modelos/rutas.php";
+
 $plantilla = new ControladorPlantilla();
 $plantilla -> plantilla();

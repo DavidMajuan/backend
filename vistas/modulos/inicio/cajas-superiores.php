@@ -4,12 +4,14 @@ $ventas = ControladorVentas::ctrMostrarTotalVentas();
 
 $visitas = ControladorVisitas::ctrMostrarTotalVisitas();
 
+*/
 $usuarios = ControladorUsuarios::ctrMostrarTotalUsuarios("id");
 $totalUsuarios = count($usuarios);
 
+
 $productos = ControladorProductos::ctrMostrarTotalProductos("id");
 $totalProductos = count($productos);
-*/
+
 ?>
 
 <!--=====================================
@@ -25,7 +27,7 @@ CAJAS SUPERIORES
     <!-- inner -->
     <div class="inner">
       
-      <h3></h3>
+      <h3>20</h3>
 
       <p>suscripciones</p>
     
@@ -59,7 +61,7 @@ CAJAS SUPERIORES
     <!-- inner -->
     <div class="inner">
       
-      <h3></h3>
+      <h3>80</h3>
 
       <p>Visitas</p>
     
@@ -93,7 +95,7 @@ CAJAS SUPERIORES
     <!-- inner -->
     <div class="inner">
     
-      <h3></h3>
+      <h3><?php echo number_format($totalUsuarios); ?></h3>
 
       <p>Usuarios</p>
     
@@ -127,7 +129,7 @@ CAJAS SUPERIORES
     <!-- inner -->
     <div class="inner">
     
-      <h3></h3>
+    <h3><?php echo number_format($totalProductos); ?></h3>
 
       <p>Productos</p>
 
