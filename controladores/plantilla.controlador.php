@@ -1,10 +1,12 @@
 <?php
 
+
 class ControladorPlantilla{
 
-    public function plantilla(){
+	public function plantilla(){
 
-        include "vistas/plantilla.php";
+		include "vistas/plantilla.php";
 
-    }
+	}
+
 }
