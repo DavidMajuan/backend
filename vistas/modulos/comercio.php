@@ -63,13 +63,13 @@
         ADMINISTRAR CÓDIGOS
         ======================================*/
   
-      //  include "comercio/codigos.php";
+        include "comercio/codigos.php";
 
         /*=====================================
         ADMINISTRAR COMERCIO
         ======================================*/
   
-      //  include "comercio/informacion.php";
+        include "comercio/informacion.php";
 
         ?>
    

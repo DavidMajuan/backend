@@ -5,11 +5,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Gestor Slide
+        Gestor slide
       </h1>
       <ol class="breadcrumb">
         <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
-        <li class="active">Gestor Slide</li>
+        <li class="active">Gestor slide</li>
       </ol>
     </section>
 
