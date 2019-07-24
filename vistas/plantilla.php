@@ -9,7 +9,7 @@ session_start();
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Tienda Online | Panel de Control</title>
+  <title>IlidanNutrition | Panel de Control</title>
 
   <link rel="icon" href="vistas/img/plantilla/icono.png">
 
@@ -207,7 +207,7 @@ JS PERSONALIZADO
 <script src="vistas/js/gestorComercio.js"></script>
 <script src="vistas/js/gestorSlide.js"></script>
 <script src="vistas/js/gestorCategorias.js"></script>
-<script src="vistas/js/gestorSubCategorias.js"></script>
+<script src="vistas/js/gestorSubcategorias.js"></script>
 <script src="vistas/js/gestorProductos.js"></script>
 
 </body>
