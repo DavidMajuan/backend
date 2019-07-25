@@ -53,6 +53,7 @@ PRODUCTOS MÁS VENDIDOS
 	      <div class="col-md-4">
 
 	        <ul class="chart-legend clearfix">
+
           <?php
 
           for($i = 0; $i < 5; $i++){
@@ -61,7 +62,7 @@ PRODUCTOS MÁS VENDIDOS
           }
 
           ?>
-
+	        
 	        </ul>
 	      
 	      </div>
@@ -81,15 +82,15 @@ PRODUCTOS MÁS VENDIDOS
 
       <?php
 
-          for($i = 0; $i < 5; $i++){
+        for($i = 0; $i < 5; $i++){
 
-              echo '<li>        
-                      <a href="#">'.$productos[$i]["titulo"].'
-                      <span class="pull-right text-'.$colores[$i].'"> '.ceil($productos[$i]["ventas"]*100/$totalVentas["total"]).'%</span></a>
-                  </li>';
-          }
+            echo '<li>        
+                    <a href="#">'.$productos[$i]["titulo"].'
+                    <span class="pull-right text-'.$colores[$i].'"> '.ceil($productos[$i]["ventas"]*100/$totalVentas["total"]).'%</span></a>
+                </li>';
+        }
 
-          ?>
+      ?>
 
 	    </ul>
 	    <!-- nav-pills -->
@@ -109,26 +110,25 @@ PRODUCTOS MÁS VENDIDOS
   var pieChartCanvas = $('#pieChart').get(0).getContext('2d');
   var pieChart       = new Chart(pieChartCanvas);
   var PieData        = [
+
+  <?php
+
+  for($i = 0; $i < 5; $i++){
+
+    echo "{
+      value    : ".$productos[$i]["ventas"].",
+      color    : '".$colores[$i]."',
+      highlight: '".$colores[$i]."',
+      label    : '".$productos[$i]["titulo"]."'
+    },";
+
+  }
+
+  
+
+
+  ?>
     
-    
-    <?php
-
-        for($i = 0; $i < 5; $i++){
-
-          echo "{
-            value    : ".$productos[$i]["ventas"].",
-            color    : '".$colores[$i]."',
-            highlight: '".$colores[$i]."',
-            label    : '".$productos[$i]["titulo"]."'
-          },";
-
-        }
-
-        
-
-
-        ?>
-
   ];
   var pieOptions     = {
     // Boolean - Whether we should show a stroke on each segment
@@ -154,7 +154,7 @@ PRODUCTOS MÁS VENDIDOS
     // String - A legend template
     legendTemplate       : '<ul class=\'<%=name.toLowerCase()%>-legend\'><% for (var i=0; i<segments.length; i++){%><li><span style=\'background-color:<%=segments[i].fillColor%>\'></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>',
     // String - A tooltip template
-    tooltipTemplate      : '<%=value %> <%=label%> users'
+    tooltipTemplate      : '<%=value %> <%=label%>'
   };
   // Create pie or douhnut chart
   // You can switch between pie and douhnut using the method below.
