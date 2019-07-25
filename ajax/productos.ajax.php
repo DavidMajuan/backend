@@ -13,7 +13,7 @@ require_once "../controladores/cabeceras.controlador.php";
 require_once "../modelos/cabeceras.modelo.php";
 
 class AjaxProductos{
-
+	
 	/*=============================================
   	ACTIVAR PRODUCTOS
  	=============================================*/	
