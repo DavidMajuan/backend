@@ -9,7 +9,7 @@ session_start();
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>IlidanNutrition | Panel de Control</title>
+  <title>Tienda Online | Panel de Control</title>
 
   <link rel="icon" href="vistas/img/plantilla/icono.png">
 
@@ -134,6 +134,7 @@ session_start();
 
 </head>
 
+
 <body class="hold-transition skin-blue sidebar-collapse sidebar-mini login-page">
 
 <?php
@@ -209,6 +210,14 @@ JS PERSONALIZADO
 <script src="vistas/js/gestorCategorias.js"></script>
 <script src="vistas/js/gestorSubcategorias.js"></script>
 <script src="vistas/js/gestorProductos.js"></script>
+<script src="vistas/js/gestorProductos.js"></script>
+<script src="vistas/js/gestorBanner.js"></script>
+<script src="vistas/js/gestorVentas.js"></script>
+<script src="vistas/js/gestorVisitas.js"></script>
+<script src="vistas/js/gestorUsuarios.js"></script>
+<script src="vistas/js/gestorAdministradores.js"></script>
+<script src="vistas/js/gestorNotificaciones.js"></script>
+
 
 </body>
 </html>
