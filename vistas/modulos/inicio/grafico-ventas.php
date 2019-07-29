@@ -35,14 +35,14 @@ GRÁFICO DE VENTAS
 	  	<!-- row -->
 	    <div class="row">
 	    
-	      <div class="col-xs-6 text-center" style="border-right: 1px solid #f4f4f4">
+	      <div class="col-xs-12 text-center" style="border-right: 1px solid #f4f4f4">
 	    
 	        <input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60" data-fgColor="#39CCCC">
 
 	        <div class="knob-label">Paypal</div>
 	      
 	      </div>
-
+<!--
 	      <div class="col-xs-6 text-center" style="border-right: 1px solid #f4f4f4">
 	        
 	        <input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60" data-fgColor="#39CCCC">
@@ -50,7 +50,7 @@ GRÁFICO DE VENTAS
 	        <div class="knob-label">Payu</div>
 	      
 	      </div>
-
+-->
 	    </div>
 	    <!-- row -->
 
@@ -66,16 +66,16 @@ var line = new Morris.Line({
     element          : 'line-chart',
     resize           : true,
     data             : [
-      { y: '2011 Q1', item1: 2666 },
-      { y: '2011 Q2', item1: 2778 },
-      { y: '2011 Q3', item1: 4912 },
-      { y: '2011 Q4', item1: 3767 },
-      { y: '2012 Q1', item1: 6810 },
-      { y: '2012 Q2', item1: 5670 },
-      { y: '2012 Q3', item1: 4820 },
-      { y: '2012 Q4', item1: 15073 },
-      { y: '2013 Q1', item1: 10687 },
-      { y: '2013 Q2', item1: 8432 }
+      { y: '2017 Q1', item1: 2666 },
+      { y: '2017 Q2', item1: 2778 },
+      { y: '2017 Q3', item1: 4912 },
+      { y: '2017 Q4', item1: 3767 },
+      { y: '2018 Q1', item1: 6810 },
+      { y: '2018 Q2', item1: 5670 },
+      { y: '2018 Q3', item1: 4820 },
+      { y: '2018 Q4', item1: 15073 },
+      { y: '2019 Q1', item1: 10687 },
+      { y: '2019 Q2', item1: 8432 }
     ],
     xkey             : 'y',
     ykeys            : ['item1'],
